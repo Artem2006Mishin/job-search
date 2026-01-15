@@ -9,11 +9,31 @@ html {
   box-sizing: inherit;
 }
 
-body {
+body, h1 {
   margin: 0;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+
