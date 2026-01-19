@@ -8,18 +8,20 @@
   <script src="index.js" defer></script>
 </head>
 <body>
+<div class="petals"></div>
+
 <header class="header">
   <div class="container">
     <div class="header__wrapper">
-      <h1 class="header__title">J<span>O</span>BPLY</h1>
+      <h2 class="header__title">J<span>O</span>BPLY</h2>
 
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Home</a>
+            <a class="header__nav-link" href="#hero">Home</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Categories</a>
+            <a class="header__nav-link" href="#posts">Categories</a> <!-- это не посты -->
           </li>
           <li class="header__nav-item">
             <a class="header__nav-link" href="#">Service</a>
@@ -30,30 +32,127 @@
         </ul>
       </nav>
 
-      <button class="header__btn"><span>Post a Vacancy</span></button>
+      <button class="header__btn red-btn"><span>Post a Vacancy</span></button>
 
-      <div class="header__mobile">
+      <div class="header__burger burger">
         <span></span>
+      </div>
 
-        <nav class="mobile__nav">
-          <ul class="mobile__nav-list">
-            <li class="mobile__nav-item">
-              <a class="mobile__nav-link" href="#">Home</a>
-            </li>
-            <li class="mobile__nav-item">
-              <a class="mobile__nav-link" href="#">Categories</a>
-            </li>
-            <li class="mobile__nav-item">
-              <a class="mobile__nav-link" href="#">Service</a>
-            </li>
-            <li class="mobile__nav-item">
-              <a class="mobile__nav-link" href="#">Jobs</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="mobile">
+        <div class="mobile__wrapper">
+          <h2 class="mobile__title">J<span>O</span>BPLY</h2>
+
+          <div class="mobile__burger burger burger--clicked">
+            <span></span>
+          </div>
+
+          <nav class="mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a class="mobile__nav-link" href="#hero">Home</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a class="mobile__nav-link" href="#posts">Categories</a> <!-- это не посты -->
+              </li>
+              <li class="mobile__nav-item">
+                <a class="mobile__nav-link" href="#">Service</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a class="mobile__nav-link" href="#">Jobs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </div>
 </header>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__wrapper">
+        <div class="hero__content">
+          <h1 class="hero__title">Find & Apply For Your Dream Job</h1>
+          <p class="hero__description">The website is chockablock with useful features, allowing you to efficiently
+            search
+            and apply for roles across all sectors, experience levels and locations.</p>
+
+          <form class="hero__form">
+            <div class="form__field form__field--first">
+              <label class="form__label" for="job">
+                <svg class="form__icon">
+                  <use href="assets/sprites.svg#loupe-icon"></use>
+                </svg>
+              </label>
+
+              <input class="form__input" id="job" type="text" placeholder="Job title or Keyword" autocomplete="off">
+            </div>
+
+            <div class="form__field form__field--second">
+              <label class="form__label" for="location">
+                <svg class="form__icon">
+                  <use href="assets/sprites.svg#location-icon"></use>
+                </svg>
+              </label>
+
+              <input class="form__input" id="location" type="text" placeholder="Location">
+            </div>
+
+            <button class="form__btn red-btn"><span>Apply Now</span></button>
+          </form>
+        </div>
+
+        <div class="hero__frame">
+          <img class="frame__image" src="assets/webp/preview.webp" alt="preview">
+
+          <figure class="card card-first">
+            <div class="card__avatar">
+              <img class="card__avatar-img" src="assets/webp/woman.webp" alt="woman">
+              <div class="card__avatar-rating"></div>
+            </div>
+            <h5 class="card__title">Maliha</h5>
+            <h6 class="card__subtitle">UX Designer</h6>
+          </figure>
+
+          <figure class="card card-second">
+            <div class="card__avatar">
+              <img class="card__avatar-img" src="assets/webp/man.webp" alt="man">
+              <div class="card__avatar-rating"></div>
+            </div>
+            <h5 class="card__title">Adam</h5>
+            <h6 class="card__subtitle">Project Manager</h6>
+          </figure>
+
+          <figure class="icon icon-google">
+            <svg class="icon__avatar">
+              <use href="assets/icons.svg#google-icon"></use>
+            </svg>
+          </figure>
+
+          <figure class="icon icon-linkedIn">
+            <svg class="icon__avatar">
+              <use href="assets/icons.svg#linkedIn-icon"></use>
+            </svg>
+          </figure>
+
+          <figure class="icon icon-slack">
+            <svg class="icon__avatar">
+              <use href="assets/icons.svg#slack-icon"></use>
+            </svg>
+          </figure>
+
+          <figure class="icon icon-paypal">
+            <svg class="icon__avatar">
+              <use href="assets/icons.svg#paypal-icon"></use>
+            </svg>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="posts" id="posts"></section>
+</main>
 </body>
 </html>

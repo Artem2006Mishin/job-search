@@ -1,0 +1,55 @@
+.burger {
+  display: none;
+  justify-self: flex-end;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: inline-block;
+  width: 75%;
+  border-radius: 15px;
+  height: 3px;
+  transform: scaleX(1);
+  background-color: var(--color-red);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.burger::before,
+.burger::after {
+  border-radius: 15px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-black);
+  transform-origin: right;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger--clicked span {
+  transform: scaleX(0);
+}
+
+.burger--clicked::before {
+  transform: rotate(-45deg);
+  background-color: var(--color-white);
+}
+
+.burger--clicked::after {
+  transform: rotate(45deg);
+  background-color: var(--color-white);
+}

@@ -1,7 +1,22 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
-  <symbol width="48" height="48" viewBox="0 0 48 48" id="burger-icon">
-    <rect x="10" y="32.4" width="28" height="3.2" rx="1.6" fill="white"/>
-    <rect x="10" y="22.4" width="28" height="3.2" rx="1.6" fill="white"/>
-    <rect x="10" y="12.4" width="28" height="3.2" rx="1.6" fill="white"/>
+  <symbol viewBox="0 0 20 20" fill="none" id="loupe-icon">
+    <g clip-path="url(#clip0_1_274)">
+      <path
+        d="M8.75 16.25C12.8921 16.25 16.25 12.8921 16.25 8.75C16.25 4.60786 12.8921 1.25 8.75 1.25C4.60786 1.25 1.25 4.60786 1.25 8.75C1.25 12.8921 4.60786 16.25 8.75 16.25Z"
+        stroke="#696973" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.375 14.375L18.75 18.75" stroke="#696973" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_1_274">
+        <rect width="20" height="20" fill="white"/>
+      </clipPath>
+    </defs>
+  </symbol>
+
+  <symbol viewBox="0 0 24 24" fill="none" id="location-icon">
+    <path
+      d="M12 0C7.00356 0 2.95312 4.05042 2.95312 9.04688C2.95312 10.7178 3.28018 12.4436 4.21874 13.6875L12 24L19.7812 13.6875C20.6337 12.5577 21.0469 10.5604 21.0469 9.04688C21.0469 4.05042 16.9964 0 12 0ZM12 5.23974C14.1023 5.23974 15.8071 6.94456 15.8071 9.04686C15.8071 11.1492 14.1023 12.854 12 12.854C9.89768 12.854 8.19288 11.1492 8.19288 9.04688C8.19288 6.94456 9.89768 5.23974 12 5.23974Z"
+      fill="#696973" fill-opacity="0.5"/>
   </symbol>
 </svg>

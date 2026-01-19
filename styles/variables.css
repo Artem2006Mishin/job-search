@@ -1,6 +1,13 @@
 :root {
   --color-white: #ffffff;
+  --color-dark-white: #F5F5F5;
   --color-black: #353540;
   --color-gray: #5D5D61;
+  --color-light-gray: #CCCCCC;
   --color-red: #EE4F3C;
+  --color-violet: #6B5ACC;
+  --color-orange: #FEC247;
+
+  --heigth-header: 100px;
+  --height-hero: 759px;
 }
