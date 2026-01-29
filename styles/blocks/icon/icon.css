@@ -1,0 +1,46 @@
+@import url("icon--hero.css");
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.icon--google {
+  transform: rotate(-38deg);
+  top: 200px;
+  left: -140px;
+}
+
+.icon--indeed {
+  transform: rotate(-20deg);
+  top: -10px;
+  left: 0;
+}
+
+.icon--slack {
+  transform: rotate(15deg);
+  top: 70px;
+  left: 475px;
+}
+
+.icon--paypal {
+  transform: rotate(11deg);
+  top: 460px;
+  left: 565px;
+}
+
+@media (max-width: 1610px) {
+  .icon--paypal {
+    display: none;
+  }
+}
+
+@media (max-width: 1420px) {
+  .icon--google,
+  .icon--indeed,
+  .icon--slack {
+    display: none;
+  }
+}

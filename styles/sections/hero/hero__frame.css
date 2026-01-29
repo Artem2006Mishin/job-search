@@ -1,0 +1,38 @@
+/*левый блок с фоткой*/
+.hero__frame {
+  position: absolute;
+  bottom: -50px;
+  z-index: -25;
+
+  height: var(--height-hero);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*круги на заднем фоне*/
+.hero__frame::before,
+.hero__frame::after {
+  position: absolute;
+  z-index: -50;
+
+  content: "";
+  border: 70px solid var(--color-dark-white);
+  border-radius: 50%;
+}
+
+.hero__frame::before {
+  width: 814px;
+  height: 814px;
+}
+
+.hero__frame::after {
+  width: 540px;
+  height: 540px;
+}
+
+.hero__frame-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}

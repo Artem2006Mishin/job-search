@@ -1,0 +1,83 @@
+@import url("form--hero.css");
+
+.form {
+  height: 70px;
+  border-radius: 10px;
+
+  display: grid;
+  align-items: center;
+  column-gap: 10px;
+
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.form__field {
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+/*полоска разделения*/
+.form__field--job-title {
+  justify-content: center;
+  border-right: 1px solid var(--color-light-gray);
+}
+
+/*размер значков: лупы и локации*/
+.form__sign {
+  width: 24px;
+  height: 24px;
+}
+
+.form__input {
+  height: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form__input::placeholder {
+  color: var(--color-gray);
+  font-size: 16px;
+}
+
+@media (max-width: 1230px) {
+  .form--hero {
+    height: 150px;
+    border-radius: 5px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 50px;
+    row-gap: 10px;
+
+    background-color: transparent;
+  }
+
+  .form__field {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 10px;
+
+    justify-content: start;
+    background-color: var(--color-white);
+  }
+
+  .form__field--job-title {
+    align-self: end;
+  }
+
+  .form__field--location {
+    align-self: start;
+  }
+
+  .form__input--hero {
+    width: 100%;
+  }
+
+  .form__button--hero {
+    border-radius: 15px;
+  }
+}

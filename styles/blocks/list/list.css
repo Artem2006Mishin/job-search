@@ -1,0 +1,6 @@
+@import url("list--header.css");
+@import url("list--mobile.css");
+
+.list {
+  display: flex;
+}

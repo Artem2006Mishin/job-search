@@ -1,0 +1,40 @@
+.icon--hero {
+  position: absolute;
+  z-index: 50;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/*заливка контейнера иконки*/
+.icon--hero::before {
+  position: absolute;
+  z-index: 51;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  opacity: 0;
+  background: var(--color-light-gray);
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.icon--hero:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*изображение самой иконки*/
+.icon__avatar--hero {
+  z-index: 52;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
+}
+
+.icon--hero:hover .icon__avatar--hero {
+  transform: scale(1.1) rotateY(360deg);
+}

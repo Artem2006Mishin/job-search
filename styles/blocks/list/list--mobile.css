@@ -1,0 +1,15 @@
+.list--mobile {
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.list__item-link--mobile {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-gray);
+  transition: color 0.5s ease;
+}
+
+.list__item-link--mobile:hover {
+  color: var(--color-white);
+}

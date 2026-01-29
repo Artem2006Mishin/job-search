@@ -1,0 +1,16 @@
+.form--hero {
+  max-width: 660px;
+  grid-template-columns: 1fr 1fr 170px;
+}
+
+.form__input--hero {
+  width: 170px;
+}
+
+.form__button--hero {
+  height: 100%;
+}
+
+.form__button--hero span::after {
+  content: "👈";
+}

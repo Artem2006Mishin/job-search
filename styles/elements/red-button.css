@@ -1,0 +1,31 @@
+.red-button {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+
+.red-button span {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  transition: transform 0.5s;
+}
+
+.red-button:hover span {
+  transform: translateX(-10px);
+}
+
+.red-button span::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 100%;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.red-button:hover span::after {
+  opacity: 1;
+  transform: translateX(5px);
+}

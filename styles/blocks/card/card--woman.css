@@ -1,0 +1,8 @@
+.card--woman {
+  top: 480px;
+  left: -105px;
+}
+
+.card__avatar--woman {
+  background-color: var(--color-violet);
+}

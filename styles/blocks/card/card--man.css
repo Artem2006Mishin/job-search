@@ -1,0 +1,8 @@
+.card--man {
+  top: 190px;
+  left: 500px;
+}
+
+.card__avatar--man {
+  background-color: var(--color-orange);
+}

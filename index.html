@@ -11,58 +11,59 @@
 <div class="petals"></div>
 
 <header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-      <h2 class="header__title">J<span>O</span>BPLY</h2>
+  <div class="header__container container">
+    <h2 class="header__title">J<span>O</span>BPLY</h2>
 
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#hero">Home</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#posts">Categories</a> <!-- это не посты -->
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Service</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Jobs</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="header__navigation">
+      <ul class="list list--header">
+        <li class="list__item">
+          <a class="list__item-link list__item-link--header" href="#hero">Home</a>
+        </li>
+        <li class="list__item">
+          <a class="list__item-link list__item-link--header" href="#posts">Categories</a>
+        </li>
+        <li class="list__item">
+          <a class="list__item-link list__item-link--header" href="#">Service</a>
+        </li>
+        <li class="list__item">
+          <a class="list__item-link list__item-link--header" href="#">Jobs</a>
+        </li>
+      </ul>
+    </nav>
 
-      <button class="header__btn red-btn"><span>Post a Vacancy</span></button>
+    <button class="header__button red-button"><span>Post a Vacancy</span></button>
+    <span class="header__span tools">🛠️</span>
 
-      <div class="header__burger burger">
-        <span></span>
-      </div>
+    <div class="header__burger burger">
+      <span></span>
+    </div>
 
-      <div class="mobile">
-        <div class="mobile__wrapper">
-          <h2 class="mobile__title">J<span>O</span>BPLY</h2>
+    <div class="mobile">
+      <div class="mobile__wrapper">
+        <h2 class="mobile__title">J<span>O</span>BPLY</h2>
 
-          <div class="mobile__burger burger burger--clicked">
-            <span></span>
-          </div>
+        <span class="mobile__span tools">🛠️</span>
 
-          <nav class="mobile__nav">
-            <ul class="mobile__nav-list">
-              <li class="mobile__nav-item">
-                <a class="mobile__nav-link" href="#hero">Home</a>
-              </li>
-              <li class="mobile__nav-item">
-                <a class="mobile__nav-link" href="#posts">Categories</a> <!-- это не посты -->
-              </li>
-              <li class="mobile__nav-item">
-                <a class="mobile__nav-link" href="#">Service</a>
-              </li>
-              <li class="mobile__nav-item">
-                <a class="mobile__nav-link" href="#">Jobs</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="mobile__burger burger burger--clicked">
+          <span></span>
         </div>
+
+        <nav class="mobile__navigation">
+          <ul class="list list--mobile">
+            <li class="list__item">
+              <a class="list__item-link list__item-link--mobile" href="#hero">Home</a>
+            </li>
+            <li class="list__item">
+              <a class="list__item-link list__item-link--mobile" href="#posts">Categories</a>
+            </li>
+            <li class="list__item">
+              <a class="list__item-link list__item-link--mobile" href="#">Service</a>
+            </li>
+            <li class="list__item">
+              <a class="list__item-link list__item-link--mobile" href="#">Jobs</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
@@ -70,89 +71,127 @@
 
 <main>
   <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero__wrapper">
-        <div class="hero__content">
-          <h1 class="hero__title">Find & Apply For Your Dream Job</h1>
-          <p class="hero__description">The website is chockablock with useful features, allowing you to efficiently
-            search
-            and apply for roles across all sectors, experience levels and locations.</p>
+    <div class="hero__container container">
+      <div class="hero__content">
+        <h1 class="hero__title">Find & Apply For Your Dream Job</h1>
+        <p class="hero__description">The website is chockablock with useful features, allowing you to efficiently
+          search
+          and apply for roles across all sectors, experience levels and locations.</p>
 
-          <form class="hero__form">
-            <div class="form__field form__field--first">
-              <label class="form__label" for="job">
-                <svg class="form__icon">
-                  <use href="assets/sprites.svg#loupe-icon"></use>
-                </svg>
-              </label>
+        <form class="form form--hero">
+          <div class="form__field form__field--job-title">
+            <label class="form__label" for="job-title">
+              <svg class="form__sign">
+                <use href="assets/svg/signs.svg#loupe-sign"></use>
+              </svg>
+            </label>
+            <input class="form__input form__input--hero" id="job-title" type="text" placeholder="Job title or Keyword"
+                   autocomplete="off">
+          </div>
 
-              <input class="form__input" id="job" type="text" placeholder="Job title or Keyword" autocomplete="off">
-            </div>
+          <div class="form__field form__field--location">
+            <label class="form__label" for="location">
+              <svg class="form__sign">
+                <use href="assets/svg/signs.svg#location-sign"></use>
+              </svg>
+            </label>
+            <input class="form__input form__input--hero" id="location" type="text" placeholder="Location">
+          </div>
 
-            <div class="form__field form__field--second">
-              <label class="form__label" for="location">
-                <svg class="form__icon">
-                  <use href="assets/sprites.svg#location-icon"></use>
-                </svg>
-              </label>
+          <button class="form__button form__button--hero red-button"><span>Apply Now</span></button>
+        </form>
+      </div>
 
-              <input class="form__input" id="location" type="text" placeholder="Location">
-            </div>
+      <div class="hero__frame">
+        <img class="hero__frame-image" src="assets/webp/preview.webp" alt="preview">
 
-            <button class="form__btn red-btn"><span>Apply Now</span></button>
-          </form>
-        </div>
+        <!--        <figure class="card card&#45;&#45;woman">-->
+        <!--          <div class="card__avatar card__avatar&#45;&#45;woman">-->
+        <!--            <img class="card__avatar-image" src="assets/webp/woman.webp" alt="woman">-->
+        <!--            <div class="rating">-->
+        <!--              <svg class="star star&#45;&#45;rating">-->
+        <!--                <use href="assets/svg/signs.svg#star-sign"></use>-->
+        <!--              </svg>-->
+        <!--              <span class="rating__number">4.8</span>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <h5 class="card__title">Maliha</h5>-->
+        <!--          <h6 class="card__subtitle">UX Designer</h6>-->
+        <!--        </figure>-->
 
-        <div class="hero__frame">
-          <img class="frame__image" src="assets/webp/preview.webp" alt="preview">
+        <!--        <figure class="card card&#45;&#45;man">-->
+        <!--          <div class="card__avatar card__avatar&#45;&#45;man">-->
+        <!--            <img class="card__avatar-image" src="assets/webp/man.webp" alt="man">-->
+        <!--            <div class="rating">-->
+        <!--              <svg class="star star&#45;&#45;rating">-->
+        <!--                <use href="assets/svg/signs.svg#star-sign"></use>-->
+        <!--              </svg>-->
+        <!--              <span class="rating__number">4.5</span>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <h5 class="card__title">Adam</h5>-->
+        <!--          <h6 class="card__subtitle">Project Manager</h6>-->
+        <!--        </figure>-->
 
-          <figure class="card card-first">
-            <div class="card__avatar">
-              <img class="card__avatar-img" src="assets/webp/woman.webp" alt="woman">
-              <div class="card__avatar-rating"></div>
-            </div>
-            <h5 class="card__title">Maliha</h5>
-            <h6 class="card__subtitle">UX Designer</h6>
-          </figure>
+        <!--        <figure class="icon icon&#45;&#45;hero icon&#45;&#45;google">-->
+        <!--          <svg class="icon__avatar icon__avatar&#45;&#45;hero">-->
+        <!--            <use href="assets/svg/icons.svg#google-icon"></use>-->
+        <!--          </svg>-->
+        <!--        </figure>-->
 
-          <figure class="card card-second">
-            <div class="card__avatar">
-              <img class="card__avatar-img" src="assets/webp/man.webp" alt="man">
-              <div class="card__avatar-rating"></div>
-            </div>
-            <h5 class="card__title">Adam</h5>
-            <h6 class="card__subtitle">Project Manager</h6>
-          </figure>
+        <!--        <figure class="icon icon&#45;&#45;hero icon&#45;&#45;indeed">-->
+        <!--          <svg class="icon__avatar icon__avatar&#45;&#45;hero">-->
+        <!--            <use href="assets/svg/icons.svg#indeed-icon"></use>-->
+        <!--          </svg>-->
+        <!--        </figure>-->
 
-          <figure class="icon icon-google">
-            <svg class="icon__avatar">
-              <use href="assets/icons.svg#google-icon"></use>
-            </svg>
-          </figure>
+        <!--        <figure class="icon icon&#45;&#45;hero icon&#45;&#45;slack">-->
+        <!--          <svg class="icon__avatar icon__avatar&#45;&#45;hero">-->
+        <!--            <use href="assets/svg/icons.svg#slack-icon"></use>-->
+        <!--          </svg>-->
+        <!--        </figure>-->
 
-          <figure class="icon icon-linkedIn">
-            <svg class="icon__avatar">
-              <use href="assets/icons.svg#linkedIn-icon"></use>
-            </svg>
-          </figure>
-
-          <figure class="icon icon-slack">
-            <svg class="icon__avatar">
-              <use href="assets/icons.svg#slack-icon"></use>
-            </svg>
-          </figure>
-
-          <figure class="icon icon-paypal">
-            <svg class="icon__avatar">
-              <use href="assets/icons.svg#paypal-icon"></use>
-            </svg>
-          </figure>
-        </div>
+        <!--        <figure class="icon icon&#45;&#45;hero icon&#45;&#45;paypal">-->
+        <!--          <svg class="icon__avatar icon__avatar&#45;&#45;hero">-->
+        <!--            <use href="assets/svg/icons.svg#paypal-icon"></use>-->
+        <!--          </svg>-->
+        <!--        </figure>-->
       </div>
     </div>
   </section>
 
-  <section class="posts" id="posts"></section>
+  <section class="posts" id="posts">
+    <!--    <div class="container">-->
+    <!--      <div class="posts__wrapper">-->
+    <!--        <h2 class="posts__title">Popular Job Posts</h2>-->
+
+    <!--        <ul class="posts__list">-->
+    <!--          <li class="posts__item">-->
+    <!--            <div class="posts__item-title">-->
+    <!--              <figure class="icon icon-posts icon-posts-google">-->
+    <!--                <svg class="icon__avatar">-->
+    <!--                  <use href="assets/svg/icons.svg#google-icon"></use>-->
+    <!--                </svg>-->
+    <!--              </figure>-->
+
+    <!--              <h3>Google</h3>-->
+
+    <!--              <figure class="group-people">-->
+    <!--                <svg class="group-people-icon">-->
+    <!--                  <use href="assets/svg/group-people.svg#group-first"></use>-->
+    <!--                </svg>-->
+    <!--              </figure>-->
+    <!--            </div>-->
+
+    <!--            <div class="posts__item-description">-->
+
+    <!--            </div>-->
+    <!--            <div class="posts__item-management"></div>-->
+    <!--          </li>-->
+    <!--        </ul>-->
+    <!--      </div>-->
+    <!--    </div>-->
+  </section>
 </main>
 </body>
 </html>

@@ -4,12 +4,12 @@ const mobile = document.querySelector('.mobile');
 const mobileLinks = document.querySelectorAll('.mobile__nav-link');
 
 headerBurger.addEventListener('click', () => {
-  headerBurger.classList.toggle('burger--clicked');
+  headerBurger.classList.add('burger--clicked');
   mobile.classList.toggle('mobile--opened');
 });
 
 mobileBurger.addEventListener('click', () => {
-  headerBurger.classList.toggle('burger--clicked');
+  headerBurger.classList.remove('burger--clicked');
   mobile.classList.toggle('mobile--opened');
 });
 

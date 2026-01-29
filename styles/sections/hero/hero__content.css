@@ -1,0 +1,21 @@
+/*правый блок с текстом и формой*/
+.hero__content {
+  padding-top: 130px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  row-gap: 2vw;
+}
+
+.hero__title {
+  font-size: 72px;
+  font-weight: bold;
+  font-family: "Georgia", sans-serif;
+  color: var(--color-black);
+}
+
+.hero__description {
+  max-width: 570px;
+  font-size: 18px;
+  color: var(--color-gray);
+  text-align: justify;
+}

@@ -1,0 +1,37 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* лепестки в hero секции */
+.petals {
+  position: absolute;
+  inset: 0;
+  z-index: -50;
+
+  height: calc(var(--heigth-header) + var(--height-hero));
+
+  background: url("../../assets/svg/backgrounds.svg#petals-background") left 0 top 0 no-repeat,
+  url("../../assets/svg/backgrounds.svg#petals-background") left 0 top 300px no-repeat,
+  url("../../assets/svg/backgrounds.svg#petals-background") left 0 top 600px no-repeat,
+  linear-gradient(0deg, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  filter: grayscale(100%);
+}
+
+/* затемнение для мобильного меню */
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 0 15px;
+  }
+}

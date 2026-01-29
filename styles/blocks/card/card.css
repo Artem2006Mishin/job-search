@@ -1,0 +1,58 @@
+@import url("card--woman.css");
+@import url("card--man.css");
+
+.card {
+  position: absolute;
+  z-index: 50;
+
+  width: 170px;
+  height: 200px;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+
+  background-color: var(--color-white);
+}
+
+.card__avatar {
+  position: relative;
+  width: 150px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.card__title {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Georgia", sans-serif;
+  color: var(--color-black);
+}
+
+.card__subtitle {
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--color-gray);
+}
+
+@media (max-width: 1420px) {
+  .card--woman {
+    display: none;
+  }
+}
+
+@media (max-width: 1660px) {
+  .card--man {
+    left: 480px;
+  }
+}
+
+@media (max-width: 1610px) {
+  .card--man {
+    display: none;
+  }
+}
