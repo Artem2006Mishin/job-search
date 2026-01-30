@@ -3,7 +3,7 @@
 
 .card {
   position: absolute;
-  z-index: 50;
+  z-index: 2;
 
   width: 170px;
   height: 200px;
@@ -39,20 +39,14 @@
   color: var(--color-gray);
 }
 
-@media (max-width: 1420px) {
-  .card--woman {
+@media (max-width: 1370px) {
+  .card--man {
     display: none;
   }
 }
 
-@media (max-width: 1660px) {
-  .card--man {
-    left: 480px;
-  }
-}
-
-@media (max-width: 1610px) {
-  .card--man {
+@media (max-width: 1230px) {
+  .card--woman {
     display: none;
   }
 }

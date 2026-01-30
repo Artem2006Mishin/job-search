@@ -1,6 +1,6 @@
 .card--man {
   top: 190px;
-  left: 500px;
+  left: clamp(420px, 16vw + 200px, 500px);
 }
 
 .card__avatar--man {

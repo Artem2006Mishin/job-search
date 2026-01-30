@@ -1,5 +1,3 @@
-@import url("icon--hero.css");
-
 .icon {
   display: flex;
   justify-content: center;
@@ -10,7 +8,7 @@
 .icon--google {
   transform: rotate(-38deg);
   top: 200px;
-  left: -140px;
+  left: -10px;
 }
 
 .icon--indeed {
@@ -21,7 +19,7 @@
 
 .icon--slack {
   transform: rotate(15deg);
-  top: 70px;
+  top: 60px;
   left: 475px;
 }
 
@@ -31,14 +29,19 @@
   left: 565px;
 }
 
-@media (max-width: 1610px) {
+@media (max-width: 1440px) {
   .icon--paypal {
     display: none;
   }
 }
 
-@media (max-width: 1420px) {
-  .icon--google,
+@media (max-width: 1330px) {
+  .icon--google {
+    display: none;
+  }
+}
+
+@media (max-width: 1230px) {
   .icon--indeed,
   .icon--slack {
     display: none;

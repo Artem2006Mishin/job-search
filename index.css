@@ -16,6 +16,9 @@
 @import url("styles/blocks/icon/icon.css");
 @import url("styles/blocks/list/list.css");
 
+/*модификаторы блоков*/
+@import url("styles/blocks/icon/icon--hero.css");
+
 /*секции*/
 @import url("styles/sections/header/header.css");
 @import url("styles/sections/hero/hero.css");

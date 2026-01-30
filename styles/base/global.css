@@ -8,7 +8,7 @@
 .petals {
   position: absolute;
   inset: 0;
-  z-index: -50;
+  z-index: -10;
 
   height: calc(var(--heigth-header) + var(--height-hero));
 

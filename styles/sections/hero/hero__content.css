@@ -1,5 +1,6 @@
 /*правый блок с текстом и формой*/
 .hero__content {
+  z-index: 20;
   padding-top: 130px;
   display: grid;
   grid-template-rows: auto auto 1fr;
