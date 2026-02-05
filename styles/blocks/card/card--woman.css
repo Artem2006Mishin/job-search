@@ -6,3 +6,9 @@
 .card__avatar--woman {
   background-color: var(--color-violet);
 }
+
+@media (max-width: 1230px) {
+  .card--woman {
+    display: none;
+  }
+}

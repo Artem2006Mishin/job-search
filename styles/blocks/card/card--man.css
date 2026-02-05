@@ -6,3 +6,9 @@
 .card__avatar--man {
   background-color: var(--color-orange);
 }
+
+@media (max-width: 1370px) {
+  .card--man {
+    display: none;
+  }
+}

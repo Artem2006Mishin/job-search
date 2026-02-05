@@ -4,3 +4,16 @@
 .list {
   display: flex;
 }
+
+/*список для 2 секции (постов)*/
+.list--posts {
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 844px) {
+  .list--posts {
+    justify-content: center;
+  }
+}

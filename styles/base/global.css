@@ -4,21 +4,6 @@
   padding: 0 30px;
 }
 
-/* лепестки в hero секции */
-.petals {
-  position: absolute;
-  inset: 0;
-  z-index: -10;
-
-  height: calc(var(--heigth-header) + var(--height-hero));
-
-  background: url("../../assets/svg/backgrounds.svg#petals-background") left 0 top 0 no-repeat,
-  url("../../assets/svg/backgrounds.svg#petals-background") left 0 top 300px no-repeat,
-  url("../../assets/svg/backgrounds.svg#petals-background") left 0 top 600px no-repeat,
-  linear-gradient(0deg, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
-  filter: grayscale(100%);
-}
-
 /* затемнение для мобильного меню */
 .overlay {
   position: fixed;

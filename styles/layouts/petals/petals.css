@@ -1,0 +1,19 @@
+.petals {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -10;
+}
+
+.petals--header {
+  height: calc(var(--heigth-header) + var(--height-hero));
+  background-image: url("../../../assets/svg/backgrounds/petals.svg");
+  background-repeat: repeat-y;
+  filter: grayscale(100%);
+  opacity: 0.05;
+}
+
+.petals--posts {
+  background-image: url("../../../assets/svg/backgrounds/petals-border.svg");
+  opacity: 0.2;
+}

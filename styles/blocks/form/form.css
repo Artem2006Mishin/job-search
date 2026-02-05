@@ -1,5 +1,3 @@
-@import url("form--hero.css");
-
 .form {
   height: 70px;
   border-radius: 10px;
@@ -44,17 +42,6 @@
 }
 
 @media (max-width: 1230px) {
-  .form--hero {
-    height: 150px;
-    border-radius: 5px;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 50px;
-    row-gap: 10px;
-
-    background-color: transparent;
-  }
-
   .form__field {
     height: 40px;
     padding: 0 10px;
@@ -71,13 +58,5 @@
 
   .form__field--location {
     align-self: start;
-  }
-
-  .form__input--hero {
-    width: 100%;
-  }
-
-  .form__button--hero {
-    border-radius: 15px;
   }
 }

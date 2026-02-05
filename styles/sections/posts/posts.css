@@ -1,0 +1,61 @@
+.posts {
+  z-index: 1;
+  position: relative;
+  height: var(--height-posts);
+  background-color: var(--color-blue);
+}
+
+.posts__container {
+  z-index: 0;
+  height: 100%;
+  padding: 100px 30px 80px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 70px;
+}
+
+.posts__title {
+  font-family: "Georgia", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.posts__button {
+  width: 135px;
+  height: 40px;
+  justify-self: center;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.posts__button span:after {
+  content: "→";
+  top: -5px;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .posts {
+    height: auto;
+  }
+
+  .posts__container {
+    padding: 60px 30px 30px;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 844px) {
+  .posts__container {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .posts__container {
+    padding: 60px 15px 30px;
+  }
+}

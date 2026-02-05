@@ -1,0 +1,4 @@
+.categories {
+  height: var(--height-categories);
+  background-color: var(--color-white);
+}

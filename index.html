@@ -8,7 +8,7 @@
   <script src="index.js" defer></script>
 </head>
 <body>
-<div class="petals"></div>
+<div class="petals petals--header"></div>
 
 <header class="header">
   <div class="header__container container">
@@ -98,7 +98,7 @@
             <input class="form__input form__input--hero" id="location" type="text" placeholder="Location">
           </div>
 
-          <button class="form__button form__button--hero red-button"><span>Apply Now</span></button>
+          <button class="form__button form__button--hero red-button"><span>Search</span></button>
         </form>
       </div>
 
@@ -161,36 +161,109 @@
   </section>
 
   <section class="posts" id="posts">
-    <!--    <div class="container">-->
-    <!--      <div class="posts__wrapper">-->
-    <!--        <h2 class="posts__title">Popular Job Posts</h2>-->
+    <div class="petals petals--posts"></div>
 
-    <!--        <ul class="posts__list">-->
-    <!--          <li class="posts__item">-->
-    <!--            <div class="posts__item-title">-->
-    <!--              <figure class="icon icon-posts icon-posts-google">-->
-    <!--                <svg class="icon__avatar">-->
-    <!--                  <use href="assets/svg/icons.svg#google-icon"></use>-->
-    <!--                </svg>-->
-    <!--              </figure>-->
+    <div class="posts__container container">
+      <h2 class="posts__title">Popular Job Posts</h2>
 
-    <!--              <h3>Google</h3>-->
+      <ul class="list list--posts">
+        <!--        первый пост-->
+        <li class="post">
+          <div class="post__preview">
+            <figure class="icon icon--posts">
+              <svg class="icon__avatar icon__avatar--posts">
+                <use href="assets/svg/icons.svg#slack-icon"></use>
+              </svg>
+            </figure>
 
-    <!--              <figure class="group-people">-->
-    <!--                <svg class="group-people-icon">-->
-    <!--                  <use href="assets/svg/group-people.svg#group-first"></use>-->
-    <!--                </svg>-->
-    <!--              </figure>-->
-    <!--            </div>-->
+            <h3 class="post__preview-title">Slack</h3>
 
-    <!--            <div class="posts__item-description">-->
+            <figure class="post__preview-users">
+              <svg class="post__preview-avatars">
+                <use href="assets/svg/signs.svg#group1-sign"></use>
+              </svg>
+            </figure>
+          </div>
 
-    <!--            </div>-->
-    <!--            <div class="posts__item-management"></div>-->
-    <!--          </li>-->
-    <!--        </ul>-->
-    <!--      </div>-->
-    <!--    </div>-->
+          <div class="post__content">
+            <h3 class="post__content-title">Sr. Product Designer</h3>
+            <h4 class="post__content-subtitle">Full Time - New York City</h4>
+          </div>
+
+          <div class="post__management">
+            <button class="post__management-button">Remote</button>
+            <button class="post__management-button">Anywhere</button>
+            <span class="post__management-span">$10k - $25k</span>
+          </div>
+        </li>
+
+        <!--        второй пост-->
+        <li class="post">
+          <div class="post__preview">
+            <figure class="icon icon--posts">
+              <svg class="icon__avatar icon__avatar--posts">
+                <use href="assets/svg/icons.svg#google-icon"></use>
+              </svg>
+            </figure>
+
+            <h3 class="post__preview-title">Google</h3>
+
+            <figure class="post__preview-users">
+              <svg class="post__preview-avatars">
+                <use href="assets/svg/signs.svg#group2-sign"></use>
+              </svg>
+            </figure>
+          </div>
+
+          <div class="post__content">
+            <h3 class="post__content-title">UX Researcher</h3>
+            <h4 class="post__content-subtitle">Full Time - United States</h4>
+          </div>
+
+          <div class="post__management">
+            <button class="post__management-button">Remote</button>
+            <button class="post__management-button">Anywhere</button>
+            <span class="post__management-span">$10k - $25k</span>
+          </div>
+        </li>
+
+        <!--        третий пост-->
+        <li class="post">
+          <div class="post__preview">
+            <figure class="icon icon--posts">
+              <svg class="icon__avatar icon__avatar--posts">
+                <use href="assets/svg/icons.svg#indeed-icon"></use>
+              </svg>
+            </figure>
+
+            <h3 class="post__preview-title">Indeed</h3>
+
+            <figure class="post__preview-users">
+              <svg class="post__preview-avatars">
+                <use href="assets/svg/signs.svg#group3-sign"></use>
+              </svg>
+            </figure>
+          </div>
+
+          <div class="post__content">
+            <h3 class="post__content-title">Project Manager</h3>
+            <h4 class="post__content-subtitle">Full Time - Singapore</h4>
+          </div>
+
+          <div class="post__management">
+            <button class="post__management-button">Remote</button>
+            <button class="post__management-button">Anywhere</button>
+            <span class="post__management-span">$10k - $25k</span>
+          </div>
+        </li>
+      </ul>
+
+      <button class="posts__button red-button"><span>View All</span></button>
+    </div>
+  </section>
+
+  <section class="categories">
+
   </section>
 </main>
 </body>

@@ -1,3 +1,6 @@
+@import url("icon--hero.css");
+@import url("icon--posts.css");
+
 .icon {
   display: flex;
   justify-content: center;

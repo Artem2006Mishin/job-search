@@ -1,9 +1,10 @@
 .header {
+  z-index: 0;
   height: var(--heigth-header);
 }
 
 .header__container {
-  height: 100px;
+  height: 100%;
   display: grid;
   grid-template-columns: auto 1fr auto;
   justify-items: center;

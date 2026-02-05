@@ -7,7 +7,10 @@
   --color-red: #EE4F3C;
   --color-violet: #6B5ACC;
   --color-orange: #FEC247;
+  --color-blue: #232443;
 
-  --heigth-header: 100px;
-  --height-hero: 759px;
+  --heigth-header: 160px;
+  --height-hero: 760px;
+  --height-posts: 650px;
+  --height-categories: 900px;
 }
