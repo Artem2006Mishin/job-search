@@ -1,0 +1,46 @@
+.card--categories {
+  width: 270px;
+  height: 270px;
+  border-radius: 25px;
+  row-gap: 15px;
+  border: 2px solid var(--color-dark-white);
+  transition: box-shadow 0.4s ease-out;
+}
+
+.card--categories:hover {
+  border: none;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card__avatar--categories {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-beige);
+  transition: background-color 0.3s ease;
+}
+
+.card--categories:hover .card__avatar--categories {
+  background-color: var(--color-red);
+}
+
+.card__avatar-image--categories {
+  width: 60px;
+  height: 60px;
+  color: var(--color-red);
+  fill: var(--color-red);
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card--categories:hover .card__avatar-image--categories {
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+
+.card__subtitle--categories {
+  font-size: 16px;
+  color: var(--color-black);
+}

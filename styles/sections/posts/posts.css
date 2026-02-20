@@ -1,17 +1,15 @@
 .posts {
   z-index: 1;
   position: relative;
-  height: var(--height-posts);
+  padding: 100px 0 60px;
   background-color: var(--color-blue);
 }
 
 .posts__container {
   z-index: 0;
-  height: 100%;
-  padding: 100px 30px 80px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  row-gap: 70px;
+  row-gap: 60px;
 }
 
 .posts__title {
@@ -39,11 +37,10 @@
 
 @media (max-width: 1200px) {
   .posts {
-    height: auto;
+    padding: 60px 0 30px;
   }
 
   .posts__container {
-    padding: 60px 30px 30px;
     row-gap: 40px;
   }
 }
@@ -51,11 +48,5 @@
 @media (max-width: 844px) {
   .posts__container {
     justify-items: center;
-  }
-}
-
-@media (max-width: 450px) {
-  .posts__container {
-    padding: 60px 15px 30px;
   }
 }

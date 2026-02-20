@@ -1,13 +1,13 @@
 .card--woman {
   top: 480px;
-  left: -105px;
+  left: -100px;
 }
 
 .card__avatar--woman {
   background-color: var(--color-violet);
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1500px) {
   .card--woman {
     display: none;
   }

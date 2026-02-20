@@ -7,7 +7,7 @@
   background-color: var(--color-orange);
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1560px) {
   .card--man {
     display: none;
   }

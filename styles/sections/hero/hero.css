@@ -2,98 +2,11 @@
 @import url("hero__frame.css");
 
 .hero {
-  z-index: 0;
-  position: relative;
-  height: var(--height-hero);
+  overflow: hidden;
 }
 
 .hero__container {
-  height: 100%;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-}
-
-/*для картинки*/
-@media (min-width: 1420px) {
-  .hero__frame {
-    right: clamp(60px, calc(43.3vw - 520px), 290px);
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1420px)  {
-  .hero__frame {
-    right: clamp(0px, calc(27.9vw - 335px), 60px);
-  }
-}
-
-@media (min-width: 550px) and (max-width: 900px) {
-  .hero__frame {
-    right: clamp(-140px, calc(11.4vw - 202px), -100px);
-  }
-}
-
-@media (max-width: 550px) {
-  .hero__frame {
-    right: clamp(-300px, calc(80vw - 580px), -140px);
-  }
-}
-
-/*остальное*/
-@media (max-width: 1230px) {
-  .hero__frame::before,
-  .hero__frame::after {
-    display: none;
-  }
-
-  .hero__title {
-    max-width: 607px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .hero__description {
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 5px;
-  }
-}
-
-@media (max-width: 955px) {
-  .hero__content {
-    padding-top: 100px;
-  }
-
-  .hero__title {
-    max-width: 457px;
-  }
-}
-
-@media (max-width: 900px) {
-  .hero__content {
-    padding-top: 60px;
-  }
-}
-
-@media (max-width: 825px) {
-  .hero__content {
-    row-gap: 6vw;
-  }
-
-  .hero__description {
-    display: none;
-  }
-}
-
-@media (max-width: 825px) {
-  .hero__title {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero__content {
-    row-gap: 10vw;
-    padding-top: 30px;
-  }
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
 }

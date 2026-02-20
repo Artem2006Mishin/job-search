@@ -11,7 +11,7 @@
 .icon--google {
   transform: rotate(-38deg);
   top: 200px;
-  left: -10px;
+  left: -80px;
 }
 
 .icon--indeed {
@@ -32,21 +32,17 @@
   left: 565px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1560px) {
   .icon--paypal {
     display: none;
   }
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1500px) {
+  .icon--indeed,
+  .icon--slack,
   .icon--google {
     display: none;
   }
 }
 
-@media (max-width: 1230px) {
-  .icon--indeed,
-  .icon--slack {
-    display: none;
-  }
-}

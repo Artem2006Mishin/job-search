@@ -1,9 +1,10 @@
-/*правый блок с текстом и формой*/
 .hero__content {
-  z-index: 20;
-  padding-top: 130px;
+  z-index: 2;
+  grid-column: 1 / 7;
+  grid-row: 1;
+
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: repeat(3, auto);
   row-gap: 2vw;
 }
 
@@ -19,4 +20,27 @@
   font-size: 18px;
   color: var(--color-gray);
   text-align: justify;
+}
+
+@media (max-width: 1100px) {
+  .hero__title {
+    font-size: 64px;
+  }
+
+  .hero__description {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 825px) {
+  .hero__content {
+    row-gap: 6vw;
+  }
+
+  .hero__description {
+    display: none;
+  }
 }

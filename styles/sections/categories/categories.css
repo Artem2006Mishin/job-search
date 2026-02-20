@@ -1,4 +1,21 @@
 .categories {
-  height: var(--height-categories);
+  position: relative;
+  padding: 100px 0 0 0;
   background-color: var(--color-white);
 }
+
+.categories__container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  row-gap: 50px;
+}
+
+.categories__title {
+  font-size: 48px;
+  font-family: "Georgia", sans-serif;
+  font-weight: bold;
+  color: var(--color-black);
+}
+

@@ -5,7 +5,7 @@
   display: flex;
 }
 
-/*список для 2 секции (постов)*/
+/*список для секции posts*/
 .list--posts {
   column-gap: 30px;
   row-gap: 20px;
@@ -16,4 +16,12 @@
   .list--posts {
     justify-content: center;
   }
+}
+
+/*список для секции categories*/
+.list--categories {
+  row-gap: 30px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }

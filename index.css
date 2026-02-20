@@ -16,14 +16,18 @@
 @import url("styles/blocks/icon/icon.css");
 @import url("styles/blocks/list/list.css");
 @import url("styles/blocks/post/post.css");
+@import url("styles/blocks/decor/decor.css");
 
 /*модификаторы блоков*/
 @import url("styles/blocks/form/form--hero.css");
+@import url("styles/blocks/card/card--hero.css");
 @import url("styles/blocks/card/card--woman.css");
 @import url("styles/blocks/card/card--man.css");
+@import url("styles/blocks/card/card--categories.css");
 
 /*layouts*/
-@import url("styles/layouts/petals/petals.css");
+@import url("styles/layouts/petals.css");
+@import url("styles/layouts/dots.css");
 
 /*секции*/
 @import url("styles/sections/header/header.css");
@@ -31,3 +35,5 @@
 @import url("styles/sections/mobile/mobile.css");
 @import url("styles/sections/posts/posts.css");
 @import url("styles/sections/categories/categories.css");
+@import url("styles/sections/registration/registration.css");
+@import url("styles/sections/vacancy/vacancy.css");

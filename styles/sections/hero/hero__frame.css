@@ -1,18 +1,26 @@
-/*левый блок с фоткой*/
+/*для создания наложения*/
 .hero__frame {
-  position: absolute;
-  bottom: -50px;
-  z-index: 10;
+  z-index: 1;
+  grid-column: 4 / -1;
+  grid-row: 1;
 
-  height: var(--height-hero);
+  display: grid;
+  justify-items: end;
+}
+
+/*для позиционирования элементов*/
+.hero__media {
+  position: relative;
+  top: 50px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /*круги на заднем фоне*/
-.hero__frame::before,
-.hero__frame::after {
+.hero__media::before,
+.hero__media::after {
   position: absolute;
   z-index: 0;
 
@@ -21,19 +29,35 @@
   border-radius: 50%;
 }
 
-.hero__frame::before {
+.hero__media::before {
   width: 814px;
   height: 814px;
 }
 
-.hero__frame::after {
+.hero__media::after {
   width: 540px;
   height: 540px;
 }
 
-.hero__frame-image {
+.hero__image {
+  display: block;
   z-index: 1;
-  max-width: 100%;
-  max-height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 1500px) {
+  .hero__media::before,
+  .hero__media::after {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__frame {
+    grid-column: 3 / -1;
+  }
+
+  .hero__image {
+    opacity: 0.8;
+  }
 }

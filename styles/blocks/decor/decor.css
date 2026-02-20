@@ -1,0 +1,78 @@
+.decor {
+  display: grid;
+  width: 400px;
+  height: 750px;
+  overflow: hidden;
+}
+
+.decor--man {
+  border-radius: 205px 0 205px 205px;
+}
+
+.decor--woman {
+  border-radius: 0 205px 205px 205px;
+}
+
+.decor > * {
+  grid-area: 1 / 1;
+}
+
+.decor__figure {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.decor__person-image {
+  z-index: 2;
+  align-self: end;
+  object-fit: cover;
+}
+
+.decor__line {
+  z-index: 1;
+  position: absolute;
+}
+
+.decor__line--red {
+  top: 0;
+  left: 762px;
+  width: 150px;
+  height: 50px;
+}
+
+.decor__line--orange {
+  top: 540px;
+  left: -90px;
+  width: 140px;
+  height: 285px;
+}
+
+@media (max-width: 1430px) {
+  .decor__line--red {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .decor--woman {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .decor--man {
+    width: 250px;
+  }
+
+  .decor__line--orange {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .decor--man {
+    opacity: 0.8;
+  }
+}
+

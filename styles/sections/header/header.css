@@ -1,5 +1,4 @@
 .header {
-  z-index: 0;
   height: var(--heigth-header);
 }
 
@@ -36,7 +35,7 @@
   display: none;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .header__title {
     font-size: 40px;
   }
@@ -55,7 +54,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .header__button {
     display: none;
   }
@@ -65,7 +64,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .header__container {
     grid-template-columns: 1fr auto auto;
     column-gap: 20px;
