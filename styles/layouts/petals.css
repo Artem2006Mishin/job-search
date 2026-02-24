@@ -1,8 +1,10 @@
 .petals {
+  /*для слоев*/
   position: absolute;
+  z-index: -10;
+
   inset: 0;
   pointer-events: none;
-  z-index: -10;
 }
 
 .petals--header {
@@ -16,4 +18,53 @@
 .petals--posts {
   background-image: url("../../assets/svg/backgrounds/petals-border.svg");
   opacity: 0.2;
+}
+
+/*ПЕРВЫЙ СЛОЙ (_0_, 1, 2) - лепестки*/
+.petals--vacancy {
+  overflow: hidden;
+
+  /*создаю сетку из лепестков*/
+  display: grid;
+  grid-template-columns: repeat(5, 372px);
+  grid-template-rows: repeat(2, 372px);
+  grid-template-areas:
+    "item1 item2 item3 .  . "
+    "item4 item5 item6 . item7";
+}
+
+/*отдельный лепесток*/
+.petals__item {
+  width: 372px;
+  height: 372px;
+  background-image: url("../../assets/svg/backgrounds/petal.svg");
+}
+
+/*позиционирования для grid-template-areas*/
+.petals__item--1 {
+  grid-area: item1;
+}
+
+.petals__item--2 {
+  grid-area: item2;
+}
+
+.petals__item--3 {
+  grid-area: item3;
+}
+
+.petals__item--4 {
+  grid-area: item4;
+}
+
+.petals__item--5 {
+  grid-area: item5;
+}
+
+.petals__item--6 {
+  grid-area: item6;
+}
+
+.petals__item--7 {
+  grid-area: item7;
 }

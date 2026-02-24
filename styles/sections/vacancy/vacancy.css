@@ -1,6 +1,148 @@
 .vacancy {
   position: relative;
   z-index: 1;
-  height: var(--height-vacancy);
-  background-color: bisque;
+  padding-top: 100px;
+}
+
+/*ВТОРОЙ СЛОЙ (0, _1_, 2) - бежевый фон*/
+.vacancy::before {
+  position: absolute;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+  bottom: 105px;
+  right: 0;
+  content: "";
+  background-color: var(--color-beige);
+  opacity: 0.95;
+}
+
+/*ТРЕТИЙ СЛОЙ (0, 1, _2_) - основной контент*/
+.vacancy__container {
+  position: relative;
+  z-index: 3;
+
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.vacancy__frame {
+  grid-column: 2 / 7;
+  display: grid;
+  border-radius: 30px;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+/*для центрирования плеера*/
+.vacancy__media {
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  min-width: 200px;
+}
+
+.vacancy__image {
+  grid-area: 1 / 1;
+  object-fit: cover;
+}
+
+.vacancy__play {
+  grid-area: 1 / 1;
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+}
+
+.vacancy__play:hover {
+  opacity: 0.9;
+}
+
+/*определяет размер ПРАВОЙ сетки и создает эффект наложения*/
+.vacancy__content {
+  grid-column: 7 / 10;
+  min-width: 225px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50px;
+}
+
+.vacancy__title {
+  font-size: 48px;
+  font-family: "Georgia", sans-serif;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.vacancy__description {
+  max-width: 310px;
+  font-size: 18px;
+  color: var(--color-gray);
+  line-height: 1.8;
+}
+
+.vacancy__button {
+  border-radius: 10px;
+  width: 220px;
+  height: 70px;
+}
+
+.vacancy__button span::after {
+  content: "🔮";
+}
+
+@media (max-width: 1245px) {
+  .vacancy__frame {
+    grid-column: 1 / 7;
+    justify-items: center;
+  }
+
+  .vacancy__content {
+    grid-column: 7 / -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .vacancy__container {
+    column-gap: 0;
+  }
+
+  .vacancy__frame {
+    z-index: 1;
+    grid-column: 1 / 6;
+    grid-row: 1 / 1;
+  }
+
+  .vacancy__content {
+    z-index: 2;
+    max-width: 225px;
+    justify-self: end;
+    grid-column: 3 / -1;
+    grid-row: 1 / 1;
+  }
+
+  .vacancy__play {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .vacancy__content {
+    justify-self: center;
+  }
+
+  .vacancy__image {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 360px) {
+  .vacancy__content {
+    justify-self: start;
+  }
 }
