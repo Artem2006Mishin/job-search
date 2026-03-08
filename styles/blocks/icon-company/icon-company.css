@@ -1,0 +1,34 @@
+.icon-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.icon-company--square {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.icon-company--circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-company__avatar {
+
+}
+
+.icon-company__avatar--big {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-company__avatar--small {
+  width: 30px;
+  height: 30px;
+}
