@@ -2,7 +2,11 @@
 
 }
 
-.star--rating {
+.star--small {
   width: 15px;
   height: 15px;
+}
+
+.star--big {
+
 }

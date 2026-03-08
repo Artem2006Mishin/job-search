@@ -102,36 +102,44 @@
         </form>
       </div>
 
-      <div class="hero__frame">
-        <div class="hero__media">
-          <img class="hero__image" src="assets/webp/preview.webp" alt="preview">
+      <div class="hero__media">
+        <div class="hero__inner">
+          <img class="hero__img" src="assets/webp/preview.webp" alt="preview">
 
-          <figure class="card card--hero card--woman">
-            <div class="card__avatar card__avatar--hero card__avatar--woman">
-              <img class="card__avatar-image card__avatar-image--hero" src="assets/webp/woman.webp" alt="woman">
-              <div class="rating">
-                <svg class="star star--rating">
-                  <use href="assets/svg/signs.svg#star-sign"></use>
+          <figure class="hero__card hero__card--pos-woman person-card person-card--vertical">
+            <div class="person-card__media person-card__media--rectangle person-card__media--violet">
+              <img class="person-card__avatar" src="assets/webp/woman.webp" alt="woman">
+
+              <div class="person-card__rating rating rating--single">
+                <svg class="star star--small">
+                  <use href="assets/svg/signs.svg#star"></use>
                 </svg>
                 <span class="rating__number">4.8</span>
               </div>
             </div>
-            <h5 class="card__title card__title--hero">Maliha</h5>
-            <h6 class="card__subtitle card__subtitle--hero">UX Designer</h6>
+
+            <div class="person-card__content">
+              <h3 class="person-card__title">Maliha</h3>
+              <h4 class="person-card__subtitle person-card__subtitle--small">UX Designer</h4>
+            </div>
           </figure>
 
-          <figure class="card card--hero card--man">
-            <div class="card__avatar card__avatar--hero card__avatar--man">
-              <img class="card__avatar-image card__avatar-image--hero" src="assets/webp/man.webp" alt="man">
-              <div class="rating">
-                <svg class="star star--rating">
-                  <use href="assets/svg/signs.svg#star-sign"></use>
+          <figure class="hero__card hero__card--pos-man person-card person-card--vertical">
+            <div class="person-card__media person-card__media--rectangle person-card__media--orange">
+              <img class="person-card__avatar" src="assets/webp/man.webp" alt="man">
+
+              <div class="person-card__rating rating rating--single">
+                <svg class="star star--small">
+                  <use href="assets/svg/signs.svg#star"></use>
                 </svg>
                 <span class="rating__number">4.5</span>
               </div>
             </div>
-            <h5 class="card__title card__title--hero">Adam</h5>
-            <h6 class="card__subtitle card__subtitle--hero">Project Manager</h6>
+
+            <div class="person-card__content">
+              <h3 class="person-card__title">Adam</h3>
+              <h4 class="person-card__subtitle person-card__subtitle--small">Project Manager</h4>
+            </div>
           </figure>
 
           <figure class="icon icon--hero icon--google">
@@ -412,7 +420,7 @@
         <div class="vacancy__media">
           <img class="vacancy__image" src="assets/webp/vacancy.webp" alt="vacancy">
           <svg class="vacancy__play">
-            <use href="assets/svg/signs.svg#feedback-sign"></use>
+            <use href="assets/svg/signs.svg#vacancy-sign"></use>
           </svg>
         </div>
 
@@ -428,7 +436,31 @@
     </div>
   </section>
 
-  <section class="feedback"></section>
+  <section class="feedback">
+    <div class="feedback__container container">
+      <h2 class="feedback__title">Great Feedback From Candidates</h2>
+      <div class="list list--feedback">
+        <div class="testimonial">
+          <svg class="testimonial__quote-icon">
+            <use href="assets/svg/signs.svg#quote-sign"></use>
+          </svg>
+          <p class="testimonial__text">
+            Very decent services & care about my health. Really happy with his advice. Lorem Ipsum is simply dummy text
+            of the printing and typesetting industry Very decent services & care about my health. Really happy with his
+            advice.
+          </p>
+
+          <div class="testimonial__avatar">
+            <img class="testimonial" src="assets/webp/avatar1.webp" alt="avatar">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="subscribe"></section>
 </main>
 </body>
 </html>

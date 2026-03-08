@@ -17,6 +17,8 @@
 @import url("styles/blocks/list/list.css");
 @import url("styles/blocks/post/post.css");
 @import url("styles/blocks/decor/decor.css");
+@import url("styles/blocks/testimonial/testimonial.css");
+@import url("styles/blocks/person-card/person-card.css");
 
 /*модификаторы блоков*/
 @import url("styles/blocks/form/form--hero.css");
@@ -38,3 +40,4 @@
 @import url("styles/sections/registration/registration.css");
 @import url("styles/sections/vacancy/vacancy.css");
 @import url("styles/sections/feedback/feedback.css");
+@import url("styles/sections/subscribe/subscribe.css");
