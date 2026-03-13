@@ -1,21 +1,18 @@
-const headerBurger = document.querySelector('.header__burger');
-const mobileBurger = document.querySelector('.mobile__burger');
-const mobile = document.querySelector('.mobile');
-const mobileLinks = document.querySelectorAll('.mobile__nav-link');
+const burger = document.querySelector(".header__burger");
+const title = document.querySelector(".header__title");
+const menu = document.querySelector(".mobile-menu");
+const links = document.querySelectorAll(".mobile-menu__link");
+const body = document.body;
 
-headerBurger.addEventListener('click', () => {
-  headerBurger.classList.add('burger--clicked');
-  mobile.classList.toggle('mobile--opened');
-});
+function toggleMenu() {
+  body.classList.toggle("lock");
+  title.classList.toggle("header__title--white");
+  menu.classList.toggle("mobile-menu--opened");
+  burger.classList.toggle("burger--clicked");
+}
 
-mobileBurger.addEventListener('click', () => {
-  headerBurger.classList.remove('burger--clicked');
-  mobile.classList.toggle('mobile--opened');
-});
+burger.addEventListener("click", toggleMenu);
 
-mobileLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    headerBurger.classList.toggle('burger--clicked');
-    mobile.classList.toggle('mobile--opened');
-  });
+links.forEach((link) => {
+  link.addEventListener("click", toggleMenu);
 });

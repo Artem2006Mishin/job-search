@@ -3,24 +3,26 @@
   width: 35px;
   height: 25px;
 
-  display: none;
-  justify-self: flex-end;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
-
   cursor: pointer;
 }
 
 .burger span {
   display: inline-block;
   width: 75%;
-  border-radius: 15px;
   height: 3px;
+  border-radius: 15px;
 
-  transform: scaleX(1);
   background-color: var(--color-red);
+  transform: scaleX(1);
   transform-origin: right;
   transition: transform 0.4s ease;
+}
+
+.burger--clicked span {
+  transform: scaleX(0);
 }
 
 .burger::before,
@@ -32,7 +34,7 @@
 
   content: "";
   background-color: var(--color-black);
-  transform-origin: right;
+  transform-origin: center;
   transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
@@ -44,16 +46,12 @@
   bottom: 0;
 }
 
-.burger--clicked span {
-  transform: scaleX(0);
-}
-
 .burger--clicked::before {
-  transform: rotate(-45deg);
+  transform: translateY(11px) rotate(-45deg);
   background-color: var(--color-white);
 }
 
 .burger--clicked::after {
-  transform: rotate(45deg);
+  transform: translateY(-11px) rotate(45deg);
   background-color: var(--color-white);
 }

@@ -10,62 +10,46 @@
 <body>
 <div class="petals petals--header"></div>
 
+<nav class="mobile-menu">
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="#hero">Home</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="#categories">Categories</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="#vacancy">Service</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="#feedback">Jobs</a>
+    </li>
+  </ul>
+</nav>
+
 <header class="header">
   <div class="header__container container">
     <h2 class="header__title">J<span>O</span>BPLY</h2>
 
-    <nav class="header__navigation">
-      <ul class="list list--header">
-        <li class="list__item">
-          <a class="list__item-link list__item-link--header" href="#hero">Home</a>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#hero">Home</a>
         </li>
-        <li class="list__item">
-          <a class="list__item-link list__item-link--header" href="#posts">Categories</a>
+        <li class="header__item">
+          <a class="header__link" href="#categories">Categories</a>
         </li>
-        <li class="list__item">
-          <a class="list__item-link list__item-link--header" href="#">Service</a>
+        <li class="header__item">
+          <a class="header__link" href="#vacancy">Service</a>
         </li>
-        <li class="list__item">
-          <a class="list__item-link list__item-link--header" href="#">Jobs</a>
+        <li class="header__item">
+          <a class="header__link" href="#feedback">Jobs</a>
         </li>
       </ul>
     </nav>
 
     <button class="header__button red-button"><span>Post a Vacancy</span></button>
-    <span class="header__span tools">🛠️</span>
-
-    <div class="header__burger burger">
-      <span></span>
-    </div>
-
-    <div class="mobile">
-      <div class="mobile__wrapper">
-        <h2 class="mobile__title">J<span>O</span>BPLY</h2>
-
-        <span class="mobile__span tools">🛠️</span>
-
-        <div class="mobile__burger burger burger--clicked">
-          <span></span>
-        </div>
-
-        <nav class="mobile__navigation">
-          <ul class="list list--mobile">
-            <li class="list__item">
-              <a class="list__item-link list__item-link--mobile" href="#hero">Home</a>
-            </li>
-            <li class="list__item">
-              <a class="list__item-link list__item-link--mobile" href="#posts">Categories</a>
-            </li>
-            <li class="list__item">
-              <a class="list__item-link list__item-link--mobile" href="#">Service</a>
-            </li>
-            <li class="list__item">
-              <a class="list__item-link list__item-link--mobile" href="#">Jobs</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    <div class="header__burger burger"><span></span></div>
   </div>
 </header>
 
@@ -78,14 +62,14 @@
           search
           and apply for roles across all sectors, experience levels and locations.</p>
 
-        <form class="form form--hero">
+        <form class="form form--search">
           <div class="form__field form__field--job-title">
             <label class="form__label" for="job-title">
               <svg class="form__sign">
                 <use href="assets/svg/signs.svg#loupe-sign"></use>
               </svg>
             </label>
-            <input class="form__input form__input--hero" id="job-title" type="text" placeholder="Job title or Keyword"
+            <input class="form__input form__input--search" id="job-title" type="text" placeholder="Job title or Keyword"
                    autocomplete="off">
           </div>
 
@@ -95,10 +79,10 @@
                 <use href="assets/svg/signs.svg#location-sign"></use>
               </svg>
             </label>
-            <input class="form__input form__input--hero" id="location" type="text" placeholder="Location">
+            <input class="form__input form__input--search" id="location" type="text" placeholder="Location">
           </div>
 
-          <button class="form__button form__button--hero red-button"><span>Search</span></button>
+          <button class="form__button form__button--search red-button"><span>Search</span></button>
         </form>
       </div>
 
@@ -269,7 +253,7 @@
     </div>
   </section>
 
-  <section class="categories">
+  <section class="categories" id="categories">
     <svg class="dots dots--categories">
       <use href="assets/svg/dots.svg#dots"></use>
     </svg>
@@ -401,7 +385,7 @@
     </div>
   </section>
 
-  <section class="vacancy">
+  <section class="vacancy" id="vacancy">
     <div class="petals petals--vacancy">
       <div class="petals__item petals__item--1"></div>
       <div class="petals__item petals__item--2"></div>
@@ -433,7 +417,7 @@
     </div>
   </section>
 
-  <section class="feedback">
+  <section class="feedback" id="feedback">
     <div class="feedback__container container">
       <h2 class="feedback__title">Great Feedback From Candidates</h2>
       <div class="list list--feedback">

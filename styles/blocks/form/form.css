@@ -10,21 +10,30 @@
   overflow: hidden;
 }
 
+.form--search {
+  max-width: 660px;
+  grid-template-columns: 1fr 1fr 170px;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
 .form__field {
   height: 50%;
-
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
 
-/*полоска разделения*/
 .form__field--job-title {
   justify-content: center;
   border-right: 1px solid var(--color-light-gray);
 }
 
-/*размер значков: лупы и локации*/
+.form__label {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .form__sign {
   width: 24px;
   height: 24px;
@@ -36,12 +45,52 @@
   font-size: 16px;
 }
 
+.form__input--search {
+  width: 170px;
+}
+
 .form__input::placeholder {
   color: var(--color-gray);
   font-size: 16px;
 }
 
+.form__button {
+
+}
+
+.form__button--search {
+  height: 100%;
+}
+
+.form__button--search span::after {
+  content: "🔍";
+}
+
+.form__button--subscribe {
+
+}
+
 @media (max-width: 1230px) {
+  .form--search {
+    height: 150px;
+    border-radius: 5px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 50px;
+    row-gap: 10px;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .form__input--search {
+    width: 100%;
+  }
+
+  .form__button--search {
+    border-radius: 15px;
+  }
+
   .form__field {
     height: 40px;
     padding: 0 10px;

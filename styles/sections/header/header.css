@@ -6,11 +6,11 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  justify-items: center;
   align-items: center;
 }
 
 .header__title {
+  user-select: none;
   font-family: "Perpetua", sans-serif;
   font-size: 50px;
   font-weight: bold;
@@ -19,6 +19,63 @@
 
 .header__title span {
   color: var(--color-red);
+}
+
+.header__title--white {
+  color: var(--color-white);
+}
+
+.header__menu {}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 4vw;
+}
+
+.header__item {}
+
+.header__link {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--color-black);
+  letter-spacing: 1px;
+}
+
+.header__link::before,
+.header__link::after {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+
+  content: "";
+  background: linear-gradient(to right, #5D5D61, #EE4F3C);
+  transition: transform 0.4s ease-out;
+}
+
+.header__link::before {
+  transform-origin: left;
+  top: -0.15em;
+}
+
+.header__link::after {
+  transform-origin: right;
+  bottom: -0.15em;
+}
+
+.header__link:hover::before,
+.header__link:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 825px) {
+  .header__link {
+    letter-spacing: 0;
+  }
 }
 
 .header__button {
@@ -31,7 +88,7 @@
   content: "🛠️";
 }
 
-.header__span {
+.header__burger {
   display: none;
 }
 
@@ -40,42 +97,31 @@
     font-size: 40px;
   }
 
-  .header__nav-link {
-    font-size: 18px;
-  }
-
   .header__button {
     width: 200px;
     height: 60px;
   }
-
-  .header__btn span {
-    font-size: 18px;
-  }
 }
 
 @media (max-width: 860px) {
-  .header__button {
-    display: none;
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 120px;
   }
 
-  .header__span {
-    display: block;
-  }
-}
-
-@media (max-width: 660px) {
   .header__container {
-    grid-template-columns: 1fr auto auto;
-    column-gap: 20px;
+    grid-template-columns: 1fr auto;
   }
 
   .header__title {
-    justify-self: start;
     font-size: 50px;
   }
 
-  .header__navigation {
+  .header__menu,
+  .header__button {
     display: none;
   }
 

@@ -1,0 +1,37 @@
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+
+  padding: 130px 30px;
+  background-color: var(--color-black);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.mobile-menu--opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.mobile-menu__item {}
+
+.mobile-menu__link {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-gray);
+  transition: color 0.5s ease;
+}
+
+.mobile-menu__link:hover {
+  color: var(--color-white);
+}
