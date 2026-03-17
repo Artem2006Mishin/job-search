@@ -1,8 +1,19 @@
 .hero {
+  position: relative;
   overflow: hidden;
 }
 
+.hero__petals {
+  z-index: 0;
+  background-image: url("../../../assets/svg/backgrounds/petals.svg");
+  background-repeat: repeat-y;
+  filter: grayscale(100%);
+  opacity: 0.05;
+}
+
 .hero__container {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;

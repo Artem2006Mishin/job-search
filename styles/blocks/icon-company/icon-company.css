@@ -19,9 +19,7 @@
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.icon-company__avatar {
-
-}
+.icon-company__avatar {}
 
 .icon-company__avatar--big {
   width: 40px;

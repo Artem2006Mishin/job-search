@@ -12,14 +12,4 @@
       fill="#EE4F3C"/>
     <path d="M1.91205 419.105C220.553 328.616 152.756 126.922 317.412 36.664" stroke="white" stroke-width="10"/>
   </symbol>
-
-  <symbol viewBox="0 0 140 285" fill="none" id="orange-line">
-    <path d="M5.00024 280C10.9028 203.743 44.7135 95.5056 133.532 5" stroke="#FEC247" stroke-width="10"
-          stroke-linecap="round"/>
-  </symbol>
-
-  <symbol viewBox="0 0 150 50" fill="none" id="red-line">
-    <path d="M5.00085 42.7219C36.458 24.6398 81.5656 11.3723 147.001 5.00037" stroke="#EE4F3C" stroke-width="10"
-          stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
 </svg>

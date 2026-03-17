@@ -8,8 +8,6 @@
   <script src="index.js" defer></script>
 </head>
 <body>
-<div class="petals petals--header"></div>
-
 <nav class="mobile-menu">
   <ul class="mobile-menu__list">
     <li class="mobile-menu__item">
@@ -28,6 +26,8 @@
 </nav>
 
 <header class="header">
+  <div class="header__petals petals"></div>
+
   <div class="header__container container">
     <h2 class="header__title">J<span>O</span>BPLY</h2>
 
@@ -55,6 +55,8 @@
 
 <main>
   <section class="hero" id="hero">
+    <div class="hero__petals petals"></div>
+
     <div class="hero__container container">
       <div class="hero__content">
         <h1 class="hero__title">Find & Apply For Your Dream Job</h1>
@@ -66,7 +68,7 @@
           <div class="form__field form__field--job-title">
             <label class="form__label" for="job-title">
               <svg class="form__sign">
-                <use href="assets/svg/signs.svg#loupe-sign"></use>
+                <use href="assets/svg/signs.svg#loupe"></use>
               </svg>
             </label>
             <input class="form__input form__input--search" id="job-title" type="text" placeholder="Job title or Keyword"
@@ -76,7 +78,7 @@
           <div class="form__field form__field--location">
             <label class="form__label" for="location">
               <svg class="form__sign">
-                <use href="assets/svg/signs.svg#location-sign"></use>
+                <use href="assets/svg/signs.svg#location"></use>
               </svg>
             </label>
             <input class="form__input form__input--search" id="location" type="text" placeholder="Location">
@@ -128,25 +130,25 @@
 
           <figure class="hero__icon hero__icon--pos-google icon-company icon-company--square">
             <svg class="hero__icon-avatar icon-company__avatar icon-company__avatar--big">
-              <use href="assets/svg/icons.svg#google-icon"></use>
+              <use href="assets/svg/company-icons.svg#google"></use>
             </svg>
           </figure>
 
           <figure class="hero__icon hero__icon--pos-indeed icon-company icon-company--square">
             <svg class="hero__icon-avatar icon-company__avatar icon-company__avatar--big">
-              <use href="assets/svg/icons.svg#indeed-icon"></use>
+              <use href="assets/svg/company-icons.svg#indeed"></use>
             </svg>
           </figure>
 
           <figure class="hero__icon hero__icon--pos-slack icon-company icon-company--square">
             <svg class="hero__icon-avatar icon-company__avatar icon-company__avatar--big">
-              <use href="assets/svg/icons.svg#slack-icon"></use>
+              <use href="assets/svg/company-icons.svg#slack"></use>
             </svg>
           </figure>
 
           <figure class="hero__icon hero__icon--pos-paypal icon-company icon-company--square">
             <svg class="hero__icon-avatar icon-company__avatar icon-company__avatar--big">
-              <use href="assets/svg/icons.svg#paypal-icon"></use>
+              <use href="assets/svg/company-icons.svg#paypal"></use>
             </svg>
           </figure>
         </div>
@@ -155,38 +157,38 @@
   </section>
 
   <section class="posts" id="posts">
-    <div class="petals petals--posts"></div>
+    <div class="posts__petals petals"></div>
 
     <div class="posts__container container">
       <h2 class="posts__title">Popular Job Posts</h2>
 
-      <ul class="list list--posts">
+      <ul class="posts__list">
         <li class="post">
           <div class="post__preview">
             <figure class="icon-company icon-company--circle">
               <svg class="icon-company__avatar icon-company__avatar--small">
-                <use href="assets/svg/icons.svg#slack-icon"></use>
+                <use href="assets/svg/company-icons.svg#slack"></use>
               </svg>
             </figure>
 
-            <h3 class="post__preview-title">Slack</h3>
+            <h3 class="post__company-name">Slack</h3>
 
-            <figure class="post__preview-users">
-              <svg class="post__preview-avatars">
-                <use href="assets/svg/signs.svg#group1-sign"></use>
+            <figure class="post__users">
+              <svg class="post__avatars">
+                <use href="assets/svg/signs.svg#group1"></use>
               </svg>
             </figure>
           </div>
 
           <div class="post__content">
-            <h3 class="post__content-title">Sr. Product Designer</h3>
-            <h4 class="post__content-subtitle">Full Time - New York City</h4>
+            <h3 class="post__title">Sr. Product Designer</h3>
+            <h4 class="post__regime">Full Time - New York City</h4>
           </div>
 
           <div class="post__management">
-            <button class="post__management-button">Remote</button>
-            <button class="post__management-button">Anywhere</button>
-            <span class="post__management-span">$10k - $25k</span>
+            <button class="post__button">Remote</button>
+            <button class="post__button">Anywhere</button>
+            <span class="post__pay">$10k - $25k</span>
           </div>
         </li>
 
@@ -194,28 +196,28 @@
           <div class="post__preview">
             <figure class="icon-company icon-company--circle">
               <svg class="icon-company__avatar icon-company__avatar--small">
-                <use href="assets/svg/icons.svg#google-icon"></use>
+                <use href="assets/svg/company-icons.svg#google"></use>
               </svg>
             </figure>
 
-            <h3 class="post__preview-title">Google</h3>
+            <h3 class="post__company-name">Google</h3>
 
-            <figure class="post__preview-users">
-              <svg class="post__preview-avatars">
-                <use href="assets/svg/signs.svg#group2-sign"></use>
+            <figure class="post__users">
+              <svg class="post__avatars">
+                <use href="assets/svg/signs.svg#group2"></use>
               </svg>
             </figure>
           </div>
 
           <div class="post__content">
-            <h3 class="post__content-title">UX Researcher</h3>
-            <h4 class="post__content-subtitle">Full Time - United States</h4>
+            <h3 class="post__title">UX Researcher</h3>
+            <h4 class="post__regime">Full Time - United States</h4>
           </div>
 
           <div class="post__management">
-            <button class="post__management-button">Remote</button>
-            <button class="post__management-button">Anywhere</button>
-            <span class="post__management-span">$10k - $25k</span>
+            <button class="post__button">Remote</button>
+            <button class="post__button">Anywhere</button>
+            <span class="post__pay">$10k - $25k</span>
           </div>
         </li>
 
@@ -223,28 +225,28 @@
           <div class="post__preview">
             <figure class="icon-company icon-company--circle">
               <svg class="icon-company__avatar icon-company__avatar--small">
-                <use href="assets/svg/icons.svg#indeed-icon"></use>
+                <use href="assets/svg/company-icons.svg#indeed"></use>
               </svg>
             </figure>
 
-            <h3 class="post__preview-title">Indeed</h3>
+            <h3 class="post__company-name">Indeed</h3>
 
-            <figure class="post__preview-users">
-              <svg class="post__preview-avatars">
-                <use href="assets/svg/signs.svg#group3-sign"></use>
+            <figure class="post__users">
+              <svg class="post__avatars">
+                <use href="assets/svg/signs.svg#group3"></use>
               </svg>
             </figure>
           </div>
 
           <div class="post__content">
-            <h3 class="post__content-title">Project Manager</h3>
-            <h4 class="post__content-subtitle">Full Time - Singapore</h4>
+            <h3 class="post__title">Project Manager</h3>
+            <h4 class="post__regime">Full Time - Singapore</h4>
           </div>
 
           <div class="post__management">
-            <button class="post__management-button">Remote</button>
-            <button class="post__management-button">Anywhere</button>
-            <span class="post__management-span">$10k - $25k</span>
+            <button class="post__button">Remote</button>
+            <button class="post__button">Anywhere</button>
+            <span class="post__pay">$10k - $25k</span>
           </div>
         </li>
       </ul>
@@ -254,95 +256,95 @@
   </section>
 
   <section class="categories" id="categories">
-    <svg class="dots dots--categories">
-      <use href="assets/svg/dots.svg#dots"></use>
-    </svg>
-
     <div class="categories__container container">
       <h2 class="categories__title">Job Categories</h2>
 
-      <ul class="list list--categories">
-        <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category1-sign"></use>
+      <ul class="categories__list">
+        <li class="category-card">
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category1"></use>
             </svg>
           </div>
-          <h5 class="card__title card__title--categories">Accouting & Finance</h5>
-          <h6 class="card__subtitle card__subtitle--categories">125 Job Vacancy</h6>
+          <h5 class="category-card__title">Accouting & Finance</h5>
+          <h6 class="category-card__jobs">125 Job Vacancy</h6>
+        </li>
+
+        <li class="category-card">
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category2"></use>
+            </svg>
+          </div>
+          <h5 class="category-card__title">UI/UX Design</h5>
+          <h6 class="category-card__jobs">52 Job Vacancy</h6>
+        </li>
+
+        <li class="category-card">
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category3"></use>
+            </svg>
+          </div>
+          <h5 class="category-card__title">Content Writing</h5>
+          <h6 class="category-card__jobs">150 Job Vacancy</h6>
+        </li>
+
+        <li class="category-card">
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category4"></use>
+            </svg>
+          </div>
+          <h5 class="category-card__title">Accouting & Finance</h5>
+          <h6 class="category-card__jobs">125 Job Vacancy</h6>
+        </li>
+
+        <li class="category-card">
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category5"></use>
+            </svg>
+          </div>
+          <h5 class="category-card__title">Digital Marketing</h5>
+          <h6 class="category-card__jobs">150 Job Vacancy</h6>
+        </li>
+
+        <li class="category-card">
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category6"></use>
+            </svg>
+          </div>
+          <h5 class="category-card__title">Technical Support</h5>
+          <h6 class="category-card__jobs">350 Job Vacancy</h6>
         </li>
 
         <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category2-sign"></use>
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category7"></use>
             </svg>
           </div>
-          <h5 class="card__title card__title--categories">UI/UX Design</h5>
-          <h6 class="card__subtitle card__subtitle--categories">52 Job Vacancy</h6>
+          <h5 class="category-card__title">Human Resource</h5>
+          <h6 class="category-card__jobs">35 Job Vacancy</h6>
         </li>
 
         <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category3-sign"></use>
+          <div class="category-card__avatar">
+            <svg class="category-card__img">
+              <use href="assets/svg/signs.svg#category8"></use>
             </svg>
           </div>
-          <h5 class="card__title card__title--categories">Content Writing</h5>
-          <h6 class="card__subtitle card__subtitle--categories">150 Job Vacancy</h6>
-        </li>
-
-        <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category4-sign"></use>
-            </svg>
-          </div>
-          <h5 class="card__title card__title--categories">Accouting & Finance</h5>
-          <h6 class="card__subtitle card__subtitle--categories">125 Job Vacancy</h6>
-        </li>
-
-        <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category5-sign"></use>
-            </svg>
-          </div>
-          <h5 class="card__title card__title--categories">Digital Marketing</h5>
-          <h6 class="card__subtitle card__subtitle--categories">150 Job Vacancy</h6>
-        </li>
-
-        <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category6-sign"></use>
-            </svg>
-          </div>
-          <h5 class="card__title card__title--categories">Technical Support</h5>
-          <h6 class="card__subtitle card__subtitle--categories">350 Job Vacancy</h6>
-        </li>
-
-        <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category7-sign"></use>
-            </svg>
-          </div>
-          <h5 class="card__title card__title--categories">Human Resource</h5>
-          <h6 class="card__subtitle card__subtitle--categories">35 Job Vacancy</h6>
-        </li>
-
-        <li class="card card--categories">
-          <div class="card__avatar card__avatar--categories">
-            <svg class="card__avatar-image card__avatar-image--categories">
-              <use href="assets/svg/signs.svg#category8-sign"></use>
-            </svg>
-          </div>
-          <h5 class="card__title card__title--categories">Art & Illustration</h5>
-          <h6 class="card__subtitle card__subtitle--categories">52 Job Vacancy</h6>
+          <h5 class="category-card__title">Art & Illustration</h5>
+          <h6 class="category-card__jobs">52 Job Vacancy</h6>
         </li>
       </ul>
     </div>
+
+    <svg class="categories__dots dots">
+      <use href="assets/svg/dots.svg#dots"></use>
+    </svg>
   </section>
 
   <section class="registration">
@@ -355,30 +357,30 @@
         <button class="registration__button red-button"><span>Create an Account</span></button>
       </div>
 
-      <div class="registration__frame">
-        <div class="decor decor--man">
-          <svg class="decor__figure">
-            <use href="assets/svg/decor.svg#orange-oval"></use>
+      <div class="registration__media">
+        <div class="registration__user registration__user--man">
+          <svg class="registration__oval">
+            <use href="assets/svg/ovals.svg#orange-oval"></use>
           </svg>
-          <img class="decor__person-image" src="assets/webp/man-big.webp" alt="man">
-
-          <svg class="decor__line decor__line--orange">
-            <use href="assets/svg/decor.svg#orange-line"></use>
-          </svg>
+          <img class="registration__img" src="assets/webp/man-big.webp" alt="man">
         </div>
 
-        <div class="decor decor--woman">
-          <svg class="decor__figure">
-            <use href="assets/svg/decor.svg#red-oval"></use>
+        <div class="registration__user registration__user--woman">
+          <svg class="registration__oval">
+            <use href="assets/svg/ovals.svg#red-oval"></use>
           </svg>
-          <img class="decor__person-image" src="assets/webp/woman-big.webp" alt="woman">
-
-          <svg class="decor__line decor__line--red">
-            <use href="assets/svg/decor.svg#red-line"></use>
-          </svg>
+          <img class="registration__img" src="assets/webp/woman-big.webp" alt="woman">
         </div>
 
-        <svg class="dots dots--registration">
+        <svg class="registration__line registration__line--orange">
+          <use href="assets/svg/lines.svg#orange-line"></use>
+        </svg>
+
+        <svg class="registration__line registration__line--red">
+          <use href="assets/svg/lines.svg#red-line"></use>
+        </svg>
+
+        <svg class="registration__dots dots">
           <use href="assets/svg/dots.svg#dots"></use>
         </svg>
       </div>

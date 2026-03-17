@@ -1,0 +1,64 @@
+.category-card {
+  width: 270px;
+  height: 270px;
+  border-radius: 25px;
+  border: 2px solid var(--color-dark-white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+
+  background-color: var(--color-white);
+  transition: box-shadow 0.4s ease-out;
+}
+
+.category-card:hover {
+  border: none;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-card__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-beige);
+  transition: background-color 0.3s ease;
+}
+
+.category-card:hover .category-card__avatar {
+  background-color: var(--color-red);
+}
+
+.category-card__img {
+  width: 60px;
+  height: 60px;
+  color: var(--color-red);
+  fill: var(--color-red);
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.category-card:hover .category-card__img {
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+
+.category-card__title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Georgia", sans-serif;
+  color: var(--color-black);
+}
+
+.category-card__jobs {
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--color-black);
+}
+

@@ -1,23 +1,6 @@
 .petals {
-  /*для слоев*/
   position: absolute;
-  z-index: -10;
-
   inset: 0;
-  pointer-events: none;
-}
-
-.petals--header {
-  height: calc(var(--heigth-header) + var(--height-hero));
-  background-image: url("../../assets/svg/backgrounds/petals.svg");
-  background-repeat: repeat-y;
-  filter: grayscale(100%);
-  opacity: 0.05;
-}
-
-.petals--posts {
-  background-image: url("../../assets/svg/backgrounds/petals-border.svg");
-  opacity: 0.2;
 }
 
 /*ПЕРВЫЙ СЛОЙ (_0_, 1, 2) - лепестки*/
