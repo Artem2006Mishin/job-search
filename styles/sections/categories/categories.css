@@ -23,8 +23,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 30px;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .categories__dots {
@@ -37,5 +36,11 @@
 @media (max-width: 1450px) {
   .categories__dots {
     display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .categories {
+    padding: 60px 0 0 0;
   }
 }
