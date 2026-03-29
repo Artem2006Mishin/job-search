@@ -26,7 +26,7 @@
 .vacancy__petal-item {
   width: 372px;
   height: 372px;
-  background-image: url("../../../assets/svg/backgrounds/petal.svg");
+  background-image: url("../../assets/svg/backgrounds/petal.svg");
 }
 
 .vacancy__petal-item:nth-child(4) {

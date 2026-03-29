@@ -3,42 +3,26 @@
 @import url("styles/base/basic.css");
 @import url("styles/base/global.css");
 
-/*элементы*/
-@import url("styles/elements/red-button.css");
-@import url("styles/elements/star.css");
-@import url("styles/elements/burger.css");
-@import url("styles/elements/tools.css");
-
 /*блоки*/
-@import url("styles/blocks/form/form.css");
-@import url("styles/blocks/card/card.css");
-@import url("styles/blocks/rating/rating.css");
-@import url("styles/blocks/icon-company/icon-company.css");
-@import url("styles/blocks/list/list.css");
-@import url("styles/blocks/post/post.css");
-@import url("styles/blocks/decor/decor.css");
-@import url("styles/blocks/testimonial/testimonial.css");
-@import url("styles/blocks/person-card/person-card.css");
+@import url("styles/blocks/form.css");
+@import url("styles/blocks/rating.css");
+@import url("styles/blocks/icon-company.css");
+@import url("styles/blocks/post.css");
+@import url("styles/blocks/person-card.css");
 @import url("styles/blocks/mobile-menu.css");
 @import url("styles/blocks/category-card.css");
-
-/*модификаторы блоков*/
-@import url("styles/blocks/card/card--hero.css");
-@import url("styles/blocks/card/card--woman.css");
-@import url("styles/blocks/card/card--man.css");
-@import url("styles/blocks/card/card--categories.css");
-
-/*layouts*/
-@import url("styles/layouts/petals.css");
-@import url("styles/layouts/dots.css");
+@import url("styles/blocks/red-button.css");
+@import url("styles/blocks/star.css");
+@import url("styles/blocks/burger.css");
+@import url("styles/blocks/petals.css");
+@import url("styles/blocks/dots.css");
 
 /*секции*/
-@import url("styles/sections/header/header.css");
-@import url("styles/sections/hero/hero.css");
-/*@import url("styles/sections/mobile/mobile.css");*/
-@import url("styles/sections/posts/posts.css");
-@import url("styles/sections/categories/categories.css");
-@import url("styles/sections/registration/registration.css");
-@import url("styles/sections/vacancy/vacancy.css");
-@import url("styles/sections/feedback/feedback.css");
-@import url("styles/sections/subscribe/subscribe.css");
+@import url("styles/sections/header.css");
+@import url("styles/sections/hero.css");
+@import url("styles/sections/posts.css");
+@import url("styles/sections/categories.css");
+@import url("styles/sections/registration.css");
+@import url("styles/sections/vacancy.css");
+@import url("styles/sections/feedback.css");
+@import url("styles/sections/subscribe.css");
